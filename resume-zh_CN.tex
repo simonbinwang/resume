@@ -34,19 +34,23 @@
 \role{算法工程师}{虹软科技股份有限公司}
 按偏区域分割模块
 \begin{itemize}
-  \item xxx
+  \item 针对手指按压时不完全覆盖指纹采集器时指纹成像面积不完全的问题,
+  \item 制定采集需求，并在采集的数据上训练基于BiSeNet的轻量级图像分割网络，利用自动化优化工具NNI调整网络与训练时的超参,
+  \item 通过多轮迭代最终在测试集上取得了IOU<0.9样本数不超过2\%的效果与10+MFLOPS的计算量.
 \end{itemize}
 异物检测模块
 \begin{itemize}
-  \item xxx
+  \item 针对指纹识别中可能出现的采集器上存在固定异物的问题,
+  \item 设计巴特沃斯低通滤波器过滤指纹信号，留下异物的低频信号，基于多帧共现的梯度信息进行异物检测,
+  \item 在保证正常case小于1\%异物误检的情况下，与识别算法配合达到了存在异物时小于1\%的指纹误识别.
 \end{itemize}
 
 \datedsubsection{\textbf{基于深度图像与深度学习的平行机械爪抓取}}{2017.9 -- 2019.4}
 \role{项目负责人}{浙江大学}
 \begin{onehalfspacing}
 \begin{itemize}
-  \item situation, task
-  \item action
+  \item 针对复杂物品目标抓取位姿难以确定的问题
+  \item 基于人工标注抓取位置与角度的数据集，训练全卷积网络预测像素位置的可抓取性与抓取角度；
   \item result
   % \item 增强深度图像抓取数据集Cornell Grasping Dataset以作为训练与验证集；
   % \item 借鉴语义分割的思想，回归出抓取位置与角度，实现像素级抓取成功率预测
@@ -114,9 +118,10 @@
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
+  \item 深度学习框架：Pytorch > MXNet > Keras/TF2
   \item 编程语言: Python > C, C++ > Java
-  \item 平台: Linux, Windows
-  \item 开发: Git, CMake
+  \item 开发平台: Linux, Windows
+  \item 开发工具: Git, CMake
 \end{itemize}
 
 % \section{\faHeartO\ 获奖情况}
@@ -129,6 +134,7 @@
   % \item 技术博客: http://blog.yours.me
   % \item GitHub: https://github.com/username
   \item 语言: 英语 - 熟练(IELTS 6.5), 日语 - 熟练(二级)
+  \item 其他项目：基于DSP的CAN总线通信模块设计, 用于结构小损伤检测的无线传感网络等
 \end{itemize}
 
 %% Reference
